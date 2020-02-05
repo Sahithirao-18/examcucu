@@ -32,22 +32,22 @@ public class Stepdefexam {
 		{
 			System.out.println("Login is successful");
 		}
-		//@When("Admin add the new category")
-		//public void adding category under the sports()
-		//{
-			//driver.findElement(By .linkText("Add Category")).click();
-			//driver.findElement(By .name("catgName")).sendKeys("sports");
-			//driver.findElement(By .name("catgDesc")).sendKeys("outdoor");
-			//driver.findElement(By .xpath("//input[@value='Add']")).click();
-		//}
-		//@When("Admin add the subcategory")
-		// void adding subcategory under the sports()
-		//{
-		//findElement(By .linkText("AddProductSubCategory.htm")).click();
-		//	driver.findElement(By .xpath("//input[@value='11294']")).click();
-			//driver.findElement(By .name("subCatgName")).sendKeys("BasketBall");
-			//driver.findElement(By .name("subCatDesc")).sendKeys("outdoor");
-			//driver.findElement(By .xpath("//input[@value='Add']")).click();
-			//		
-		//}
+		@When("Admin add the new category")
+		public void adding category under the sports()
+	{
+			driver.findElement(By .linkText("Add Category")).click();
+			driver.findElement(By .name("catgName")).sendKeys("sports");
+			driver.findElement(By .name("catgDesc")).sendKeys("outdoor");
+			driver.findElement(By .xpath("//input[@value='Add']")).click();
+		}
+	@When("Admin add the subcategory")
+		public void adding subcategory under the sports()
+		{
+		findElement(By .linkText("AddProductSubCategory.htm")).click();
+			driver.findElement(By .xpath("//input[@value='11294']")).click();
+			driver.findElement(By .name("subCatgName")).sendKeys("BasketBall");
+			driver.findElement(By .name("subCatDesc")).sendKeys("outdoor");
+			driver.findElement(By .xpath("//input[@value='Add']")).click();
+				
+		}
 }
